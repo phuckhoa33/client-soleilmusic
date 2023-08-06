@@ -49,10 +49,9 @@ export const Learning = () => {
       }
     };
     fetchVideoCourse();
-  }, []);
+  }, [course_id]);
 
   const handleWhenClickVideoList = (video_course_id, video_id) => {
-    console.log(video_course_id);
     if (video_id > id) {
       toast.warn("Bạn phải hoàn thành xong bài học");
       return;
