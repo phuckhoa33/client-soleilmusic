@@ -18,7 +18,7 @@ export const streaming = async(m3u8Url: string, videoRef: any) => await axios.ge
     hls.attachMedia(videoRef.current);
   });
 export const create_video_progress = async(newVideoProgress: any) => await axios.post(`${url}/video/video_progress`, newVideoProgress);
-export const get_video_progress = async(user_id: string, video_id: string, course_id: string) => await axios.get(`${url}/video/video_progress/${user_id}/${video_id}/${course_id}`);
+export const get_video_progress = async(user_id: string, course_id: string) => await axios.get(`${url}/video/video_progress/${user_id}/${course_id}`);
 export const update_video_progress = async(newVideoProgress: any) => await axios.patch(`${url}/video/video_progress`, newVideoProgress);
 export const get_all_video_course = async(course_id: string) => await axios.get(`${url}/video/videoCourse/${course_id}`);
 export const getNewestVideoProgress = async(userId: string, courseId: string) => await axios.get(`${url}/video/videoProgress/${userId}/${courseId}`);
