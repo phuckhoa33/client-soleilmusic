@@ -18,7 +18,7 @@ export const Learning = () => {
   const [submenu, setSubmenu] = useState(false);
   // State for video list
   const [videos, setVideos] = useState([]);
-  const [video, setVideo] = useState(null);
+  const [video, setVideo] = useState();
   const [course, setCourse] = useState({});
   const [activeTab, setActiveTab] = useState("personalInfo");
   const [id, setId] = useState(0);
@@ -42,8 +42,12 @@ export const Learning = () => {
         const getCourseIntoDataProcess = await getCourse(course_id);
         Promise.all([getAllVideoCourseProcess, getNewestVideoProgressWithUserIdAndCourseIdProcess, getCourseIntoDataProcess]);
         setVideos(getAllVideoCourseProcess.data.result);
-        console.log(getNewestVideoProgressWithUserIdAndCourseIdProcess.data);
-        setVideo(getNewestVideoProgressWithUserIdAndCourseIdProcess.data.result);
+        if(Object.keys(getNewestVideoProgressWithUserIdAndCourseIdProcess.data.result).length>0){
+          setVideo(getNewestVideoProgressWithUserIdAndCourseIdProcess.data.result);
+        }
+        else {
+          setVideo(videos[0]);
+        }
         setCourse(getCourseIntoDataProcess.data.result);
       } catch (error) {
         console.log(error);
