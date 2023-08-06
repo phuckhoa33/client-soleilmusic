@@ -15,7 +15,7 @@ const VideoPlayer = ({user_id, video_id, course_id, video_path, setId, handleWhe
   useEffect(() => {
     const fetchVideoProgress = async () => {
       try {
-        const data = await getVideoProgress(user_id, course_id);
+        const data = await getVideoProgress(user_id, video_id, course_id);
         if(data){
           setVideoState(data);
           
