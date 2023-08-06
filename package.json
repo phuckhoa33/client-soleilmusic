@@ -1,6 +1,5 @@
 {
   "name": "user-front-end",
-  "homepage": "http://soleilmusic.client.vn/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
