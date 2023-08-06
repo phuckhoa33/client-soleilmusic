@@ -42,7 +42,7 @@ export const Learning = () => {
         const getCourseIntoDataProcess = await getCourse(course_id);
         Promise.all([getAllVideoCourseProcess, getNewestVideoProgressWithUserIdAndCourseIdProcess, getCourseIntoDataProcess]);
         setVideos(getAllVideoCourseProcess.data.result);
-        if(Object.keys(getNewestVideoProgressWithUserIdAndCourseIdProcess.data.result).length>0){
+        if(getNewestVideoProgressWithUserIdAndCourseIdProcess.data.result === null || undefined){
           setVideo(getNewestVideoProgressWithUserIdAndCourseIdProcess.data.result);
         }
         else {
