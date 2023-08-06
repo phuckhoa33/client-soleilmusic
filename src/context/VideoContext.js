@@ -10,8 +10,8 @@ export const VideoProgressProvider = ({children}) => {
     const [currentTime, setCurrentTime] = useState(0);
 
 
-    const getVideoProgress = async (user_id, video_id, course_id) => {
-        const {data} = await get_video_progress(user_id, video_id, course_id);
+    const getVideoProgress = async (user_id, course_id) => {
+        const {data} = await get_video_progress(user_id, course_id);
         return data.result;
     } 
     return (
