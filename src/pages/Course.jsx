@@ -34,7 +34,7 @@ function Course() {
         course_id: id
       }
       const {data} = await enroll(formEnroll);
-      if(data.result.statusCode!==202){
+      if(data?.result?.statusCode!==202){
         toast.warn("Khoa hoc da duoc ban dang ky")
       }
       navigate(`/learning/${id}/${user['code']}`);
