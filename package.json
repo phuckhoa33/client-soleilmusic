@@ -48,8 +48,7 @@
     "typescript": "^4.9.5",
     "universal-cookie": "^4.0.4",
     "video-react": "^0.16.0",
-    "web-vitals": "^2.1.4",
-    "heroku-postbuild": "npm run build"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
