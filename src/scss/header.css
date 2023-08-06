@@ -1,0 +1,14 @@
+/* Add custom CSS for responsive styles */
+/* You can adjust these styles based on your needs */
+
+@media (max-width: 768px) {
+  /* Move the search bar to the left when screen size is smaller */
+  .d-flex {
+    order: 2;
+  }
+
+  /* Adjust spacing of the navbar items when collapsed */
+  .navbar-nav {
+    /* margin-top: 8px; */
+  }
+}

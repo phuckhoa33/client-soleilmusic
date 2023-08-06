@@ -1,0 +1,22 @@
+/* App.css */
+.container {
+    margin-top: 20px;
+  }
+  
+  .comment-form textarea {
+    resize: vertical;
+  }
+  
+  .comment-list {
+    margin-top: 20px;
+  }
+  
+  .comment-item {
+    margin-bottom: 10px;
+  }
+  
+  .reply-list {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  

@@ -1,0 +1,79 @@
+.course-intro {
+    padding: 50px 0;
+  }
+  
+  .course-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1c4966;
+  }
+  
+  .course-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .course-info {
+    margin-bottom: 40px;
+  }
+  
+  .course-info p {
+    margin-bottom: 10px;
+  }
+  
+  .join-btn {
+    margin-top: 20px;
+    background-color: #1c4966;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-btn:hover {
+    background-color: #15384f;
+  }
+  
+  .course-outline-container {
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .course-outline {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .course-outline li {
+    margin-bottom: 5px;
+  }
+  
+  .teachers-list,
+  .contributors-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .teachers-list li,
+  .contributors-list li {
+    margin-bottom: 5px;
+  }
+  
+  .course-image {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .course-image img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  

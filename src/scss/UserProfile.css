@@ -1,0 +1,27 @@
+.user-profile {
+    padding: 50px 0;
+  }
+  
+  .user-profile h2 {
+    margin-bottom: 30px;
+  }
+  
+  .user-profile img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .user-profile ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .user-profile ul li {
+    margin-bottom: 5px;
+  }
+  
+  .user-profile .input-group-text {
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,26 @@
+.dashboard {
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  padding-top: 20px;
+  height: 100vh;
+  width: 16.6667%; /* 2/12 */
+  float: left;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+}
+
+.sidebar .nav-link.active {
+  background-color: #555;
+}
+
+.main-content {
+  padding: 20px;
+  width: 83.3333%; /* 10/12 */
+  float: left;
+}

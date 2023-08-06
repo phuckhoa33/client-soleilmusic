@@ -1,0 +1,44 @@
+.content {
+    height: 1000px;
+}
+.content-container h1 {
+    text-align: left !important;
+}
+.content-container p {
+    line-height: 1.125rem;
+}
+.nav-item {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.125rem;
+    width: 100%;
+    border: 1px solid #fff;
+}
+.box-shadow-section{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.nav-item:hover{
+    border-bottom: 1px solid #ccc;
+}
+.next-course-container{
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    width: 250px;
+    
+}
+.next-course-btn{
+   
+    transform: translate(-28%,50%);
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+    font-weight: 600 !important;
+}
+.next-course-btn:hover {
+    color: #fff !important;
+    background-color: #000 !important;
+    
+}
