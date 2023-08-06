@@ -42,6 +42,7 @@ export const Learning = () => {
         const getCourseIntoDataProcess = await getCourse(course_id);
         Promise.all([getAllVideoCourseProcess, getNewestVideoProgressWithUserIdAndCourseIdProcess, getCourseIntoDataProcess]);
         setVideos(getAllVideoCourseProcess.data.result);
+        console.log(getNewestVideoProgressWithUserIdAndCourseIdProcess.data);
         setVideo(getNewestVideoProgressWithUserIdAndCourseIdProcess.data.result);
         setCourse(getCourseIntoDataProcess.data.result);
       } catch (error) {
@@ -49,7 +50,7 @@ export const Learning = () => {
       }
     };
     fetchVideoCourse();
-  }, [course_id]);
+  }, []);
 
   const handleWhenClickVideoList = (video_course_id, video_id) => {
     if (video_id > id) {
