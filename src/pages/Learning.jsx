@@ -48,6 +48,7 @@ export const Learning = () => {
         else {
           setVideo(videos[0]);
         }
+        console.log(video);
         setCourse(getCourseIntoDataProcess.data.result);
       } catch (error) {
         console.log(error);
