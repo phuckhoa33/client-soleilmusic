@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Hls from 'hls.js';
-const url = "https://soleilmusic-server-9a4ed1582524.herokuapp.com/";
+const url = "https://soleilmusic-server-9a4ed1582524.herokuapp.com";
 // Authentication
 export const login = async (formLogin: any) => await axios.post(`${url}auth/login`, formLogin);
 export const register = async (formRegister: any) => await axios.post(`${url}auth/register`, formRegister);
