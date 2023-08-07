@@ -165,7 +165,6 @@ export const Learning = () => {
               >
                 <div className="nav-item py-3" onClick={() => setSubmenu(() => !submenu)}>
                     <FontAwesomeIcon icon={faBookOpen }  className="pe-2"/>
-                    <h1>{video?.video_title}</h1>
                   Nội dung chính
                 </div>
                 {submenu && (
