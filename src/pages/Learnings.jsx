@@ -33,12 +33,12 @@ export const Learnings = () => {
         setLoading(true);
         if(tag==="complete"){
             setTempLearnings(() => {
-                return learnings.filter((learning) => learning.progress===100);
+                return learnings?.filter((learning) => learning.progress===100);
             })
         }
         else if (tag==="learning"){
             setTempLearnings(() => {
-                return learnings.filter((learning) => learning.progress<100);
+                return learnings?.filter((learning) => learning.progress<100);
             })
         }
         else {
@@ -52,17 +52,17 @@ export const Learnings = () => {
         setSelectedOption(targetValue)
         if(targetValue==="1"){
             setTempLearnings(() => {
-                return learnings.slice().sort((a, b) => a.learning_title.localeCompare(b.learning_title))
+                return learnings?.slice()?.sort((a, b) => a.learning_title.localeCompare(b.learning_title))
             })
         }
         else if(targetValue==="2"){
             setTempLearnings(() => {
-                return learnings.slice().sort((a, b) => b.learning_title.localeCompare(a.learning_title))
+                return learnings?.slice()?.sort((a, b) => b.learning_title.localeCompare(a.learning_title))
             })
         }
         else if (targetValue==="3") {
             setTempLearnings(() => {
-                return learnings.slice().sort((a, b) => a.created_at - b.created_at)
+                return learnings?.slice()?.sort((a, b) => a.created_at - b.created_at)
             })
         }
         else {
@@ -78,7 +78,7 @@ export const Learnings = () => {
 
     const handleSubmitSearchPhase = () => {
         setTempLearnings(() => {
-            return learnings.filter(learning => learning.learning_title.startsWith(search));
+            return learnings?.filter(learning => learning?.learning_title.startsWith(search));
         })
     }
 
