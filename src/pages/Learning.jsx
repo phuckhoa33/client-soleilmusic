@@ -46,7 +46,7 @@ export const Learning = () => {
           setVideo(getNewestVideoProgressWithUserIdAndCourseIdProcess.data.result);
         }
         else {
-          setVideo(videos[0]);
+          setVideo(getAllVideoCourseProcess.data.result[0]);
         }
         console.log(video);
         setCourse(getCourseIntoDataProcess.data.result);
